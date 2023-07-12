@@ -6,28 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./style.css">
+
     <script src="https://kit.fontawesome.com/633950fa76.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- BANNER  -->
     <div id="particles-js">
+        <div class="logo">&lt;/JGira&gt;</div>
+        <input type="checkbox" name="nav-check" id="nav-check" hidden>
         <nav>
-            <div class="logo">JGira</div>
+            <div class="logo">&lt;/JGira&gt;</div>
             <ul>
                 <li> <a href="#home"> Home</a></li>
                 <li> <a href="#about"> About </a> </li>
                 <li> <a href="#projects">Projects </a></li>
                 <li> <a href="#contact">Contact </a></li>
             </ul>
+
         </nav>
-        <header id="banner">
-            <h2> Hello my name is <span> Justin Gira </span>
-            </h2>
-            <h2>I'm a Front-End Developer
-            </h2>
-            <div id="view-work-button"> <a href="#about">View my Work</a> <i class="fas fa-arrow-right"></i></div>
-        </header>
+        <label for="nav-check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+    </div>
+    <header id="banner">
+        <h2> Hello my name is <span> Justin Gira </span>
+        </h2>
+        <h2>I'm a Front-End Developer
+        </h2>
+        <div id="view-work-button"> <a href="#about">View my Work</a> <i class="fas fa-arrow-right"></i></div>
+    </header>
     </div>
     <!-- NAV BAR SECTION -->
 
@@ -35,6 +44,7 @@
     <!-- ABOUT ME SECTION -->
 
     <section id="about">
+
         <h2> About Me</h2>
         <div class="content-container">
             <p>My name is Justin Gira I am 31 years old. I was born in Philippines and raised in London.
@@ -45,7 +55,7 @@
                 I have decided to rekindle my love for code as I found it the most rewarding knowing I have created a
                 master piece. Currently developing my skills and improving my skills on JavaScript.
                 Beside coding, I love going gym , playing basketball and travelling
-            <span class="cv-button"> View My CV</span>
+                <span class="cv-button"> <a href="#"> View My CV </a></span>
             </p>
             <div class="photo-of-me-container">
                 <img src="./IMG_0260.MOV.jpg" alt="photo of me" class="my-photo">
@@ -55,17 +65,19 @@
     <!-- SKILLS SECTION -->
     <section id="skills">
         <h2> Skills</h2>
-        <div class="skills"><i class="fab fa-html5 fa-5x"></i>
-        </div>
-        <div class="skills"><i class="fab fa-css3-alt fa-5x"></i>
-        </div>
-        <div class="skills"><i class="fab fa-js-square fa-5x"></i>
-        </div>
-        <div class="skills"><i class="fab fa-bootstrap fa-5x"></i>
-        </div>
-        <div class="skills"><i class="fab fa-git-alt fa-5x"></i>
-        </div>
-        <div class="skills"> <i class="fab fa-react fa-5x"></i>
+        <div class="skills-content">
+            <div class="skills"><i class="fab fa-html5 fa-5x"></i>
+            </div>
+            <div class="skills"><i class="fab fa-css3-alt fa-5x"></i>
+            </div>
+            <div class="skills"><i class="fab fa-js-square fa-5x"></i>
+            </div>
+            <div class="skills"><i class="fab fa-bootstrap fa-5x"></i>
+            </div>
+            <div class="skills"><i class="fab fa-git-alt fa-5x"></i>
+            </div>
+            <div class="skills"> <i class="fab fa-react fa-5x"></i>
+            </div>
         </div>
     </section>
     <!-- PROJECT SECTION -->
@@ -89,28 +101,35 @@
     <!-- CONTACT ME SECTION -->
 
     <section id="contact">
+        <div>
+            <h2> Contact Me</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id provident cumque, rem, expedita minima minus, incidunt explicabo ipsa sequi consequuntur? 
+                Id, quae optio repellendus eius obcaecati numquam. Fuga, enim.</p>
+        </div>
         <form action="#" method="get">
-            <h2> Contact</h2>
-            <div>
-                <label for="name">Name :</label>
+
+            <div class="input-container">
+                <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
             </div>
-            <div>
-                <label for="email">Email :</label>
+            <div class="input-container">
+                <label for="email">Email</label>
                 <input type="email" name="email" id="email" required>
             </div>
-            <div>
-                <label for="message">Enter Message :</label>
+            <div class="input-container">
+                <label for="message">Enter Message</label>
                 <textarea name="message" id="message" cols="30" rows="10">
 
                 </textarea>
             </div>
-            <input type="submit" value="Send">
+            <div class="submit-container">
+                <input type="submit" value="Send">
+            </div>
         </form>
     </section>
 
     <footer>
-        <a href="#home" class="icon-home"><i class="fas fa-angle-double-up fa-3x"></i></a>
+        <!-- <a href="#home" class="icon-home"><i class="fas fa-angle-double-up fa-3x"></i></a> -->
 
         <div class="footer-icon"><a href="https://www.linkedin.com/in/justingira/" target="_blank"><i
                     class="fab fa-linkedin fa-3x"></i></a></div>
