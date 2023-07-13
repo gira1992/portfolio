@@ -419,6 +419,7 @@ ul li a:hover::after{
     text-align: left;
     margin-bottom: 50px;
     border-bottom: #65B1F3 2px solid;
+    padding-left: 5rem;
 }
 
 .project-container{
@@ -430,10 +431,35 @@ ul li a:hover::after{
 
 .img-container{
     width: 450px;
+    position: relative;
+    height: fit-content;
+    margin: 5px;
+}
+
+.card{
+    position: absolute;
+    top: 0px;
+    background-color: #2f2b2bba;
+    height: 100%;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.2s all ease;
+    color: #fff;
+}
+
+.img-container:hover .card{
+    transform: scaleX(1);
 }
 
 .img-container img{
     width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card ul li{
+    list-style:circle
 }
 
 @media only screen and (max-width: 920px) {
@@ -451,8 +477,9 @@ ul li a:hover::after{
     background-color: #8c8a943f;
     padding: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 450px 750px;
     text-align: center;
+    justify-content: center;
 }
 #contact h2{
     border-bottom: none;
@@ -460,9 +487,15 @@ ul li a:hover::after{
 }
 
 form{
-    
+    background-color: #626263;
     width: 70%;
-    margin: 0 auto
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+input[type='text']{ 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 input, textarea{
@@ -473,6 +506,10 @@ input, textarea{
 input{
     height: 2rem;
     border-bottom: #fff solid 1px;
+}
+
+input:focus label{
+    background-color:  #927d7d;
 }
 
 
@@ -486,10 +523,30 @@ input[type='submit']{
     position: relative;
 }
 
+.submit-container{
+    background-color: #626263;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 0;
+}
 label{
     position: absolute;
     top: 0;
     color: #fff;
+}
+
+@media only screen and (max-width: 1200px){
+
+    #contact{
+         grid-template-columns: 1fr 1fr;       
+    }
+}
+
+@media only screen and (max-width : 950px) {
+    #contact h2 {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
 }
 
 /* FOOTER SECTION*/
@@ -497,10 +554,7 @@ label{
 footer{
     background-color: #222020;
     position: relative;
-    /* display: flex; */
     height: fit-content;
-    justify-content: center;
-    flex-direction: ;
     text-align: center;
 }
 
@@ -518,4 +572,5 @@ footer{
 
 .copyright{
     color: #fff;
+    margin-top: 15px;
 }
