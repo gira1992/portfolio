@@ -159,7 +159,6 @@ nav{
 ul{
     display: flex;
     justify-content: space-around;
-    /* background-color: rgba(8, 15, 20, 0.733); */
     height: 100%;
     align-items: center;
     padding: 1.5rem;
@@ -264,16 +263,10 @@ ul li a:hover::after{
         margin-top: 20px;
     }
 
-    /* .logo{
-        display: block;
-        height: 70px;
-        display: flex;
-        align-items: center;
-        margin-left: 30px;
-    } */
-
     .hamburger{
         display: block;
+        width: 10%;
+        margin-left: auto;
     }
 
     ul li a{
@@ -298,15 +291,6 @@ ul li a:hover::after{
     margin-top: 0.7rem;
     border-bottom: #65B1F3 2px solid;
 }
-
-/* #about h2::after{
-    content: '';
-    display: block;
-    width: 12rem;
-    height: 6px;
-    background-color: rgb(101, 177, 243);
-    margin: 5px auto;
-} */
 
 .content-container{
     display: grid;
@@ -493,14 +477,15 @@ form{
     border-radius: 5px;
 }
 
-input[type='text']{ 
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
 input, textarea{
     width: 100%;
     background-color: #626263;
+    margin: 10px auto;
+    border: #fff solid 1px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px ;
+    color: #fff;
 }
 
 input{
@@ -508,19 +493,20 @@ input{
     border-bottom: #fff solid 1px;
 }
 
-input:focus label{
-    background-color:  #927d7d;
-}
-
-
 input[type='submit']{
     width: 20%;
-    border: 2px solid #626263;
-    background-color: #fff;
+    border: 2px solid #fefefe;
+    background-color: #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #000;
+    padding: 5px;
 }
 
 .input-container{
     position: relative;
+    width: 80%;
+    margin: auto;
 }
 
 .submit-container{
@@ -529,10 +515,32 @@ input[type='submit']{
     border-bottom-right-radius: 5px;
     padding: 10px 0;
 }
+
+
 label{
     position: absolute;
-    top: 0;
+    top: 15px;
+    font-size: 16px;
+    left: 7px;
     color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s;
+    font-weight: 700;
+}
+
+/* USED SIBLING SELECTOR (~) TO EDIT LABEL WHEN INPUT HAS BEEN CLICKED ON  */
+.text-input:focus ~ label, 
+.text-input:not(:placeholder-shown).text-input:not(:focus) ~ label{
+    background-color: #626263;
+    top: 0;
+    font-size: 0.8rem;
+    z-index: 10;
+}
+
+
+.message{
+    color: rgb(125, 3, 3);
+    margin: 10px;
 }
 
 @media only screen and (max-width: 1200px){
@@ -549,6 +557,38 @@ label{
     }
 }
 
+@media only screen and (max-width: 900px){
+    #contact{
+        grid-template-columns: 1fr 500px;
+    }
+}
+
+@media only screen and (max-width: 710px){
+    #contact{
+        grid-template-columns: 450px;
+        grid-template-rows: 200px 350px;
+        padding: 0.5rem;
+    }
+
+    form{
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #contact {
+        grid-template-rows: 200px 1fr;
+    }
+
+    .submit-container{
+        padding: 0;
+    }
+
+    form{
+        padding-top: 10px;
+    }
+}
 /* FOOTER SECTION*/
 
 footer{

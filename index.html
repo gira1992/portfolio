@@ -47,18 +47,10 @@
 
         <h2> About Me</h2>
         <div class="content-container">
-            <p>My name is Justin Gira I am 31 years old. I was born in Philippines and raised in London.
-                I have been coding off and on for most of my life. I was lucky enough to enrol in an IT class
-                durng my college days where I began learning HTML and CSS (using Dreamweaver), and I loved it! I have
-                done many things throughout my life, but I keep finding myself coming back to coding. 
-                <!-- I would describe                myself who is keen on improving my skills. -->
-                I have decided to rekindle my love for code as I found it the most rewarding knowing I have created a
-                master piece. Currently developing and improving my skills on JavaScript.
-                Beside coding, I love going gym , playing basketball and travelling
-                <span class="cv-button"> <a href="#"> View My CV </a></span>
-            </p>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolor saepe! Exercitationem nesciunt quo nam reiciendis odit at dolor similique a qui corrupti nobis rem possimus cum alias, accusantium ipsum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga rerum incidunt aperiam odit consequuntur quas et maiores sit natus commodi sunt minima accusamus accusantium,
+                 vel veniam ad similique perspiciatis pariatur!</p>
             <div class="photo-of-me-container">
-                <img src="./IMG_0260.MOV.jpg" alt="photo of me" class="my-photo">
+                <img src="./vector-users-icon.jpg" alt="photo of me" class="my-photo">
             </div>
         </div>
     </section>
@@ -94,15 +86,27 @@
             </div>
             <div class="img-container">
                 <img src="./Resources/project-1.png" alt="">
-                <div class="card">USed HTML5, CSS3 JavaScript</div>
+                <div class="card">Tech Used
+                    <p>
+                        HTML, CSS, JavaScript
+                    </p>
+                </div>
             </div>
             <div class="img-container">
                 <img src="./Resources/project-1.png" alt="">
-                <div class="card">USed HTML5, CSS3 JavaScript</div>
+                <div class="card">Tech Used
+                    <p>
+                        HTML, CSS, JavaScript
+                    </p>
+                </div>
             </div>
             <div class="img-container">
                 <img src="./Resources/project-1.png" alt="">
-                <div class="card">USed HTML5, CSS3 JavaScript</div>
+                <div class="card">Tech Used
+                    <p>
+                        HTML, CSS, JavaScript
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -111,36 +115,35 @@
     <section id="contact">
         <div>
             <h2> Contact Me</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id provident cumque, rem, expedita minima minus, incidunt explicabo ipsa sequi consequuntur? 
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe id provident cumque, rem, expedita
+                minima minus, incidunt explicabo ipsa sequi consequuntur?
                 Id, quae optio repellendus eius obcaecati numquam. Fuga, enim.</p>
         </div>
         <form action="#" method="get">
 
             <div class="input-container">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder=" " class="text-input" autocomplete="off">
+                <label for="name" id="name-label">Name</label>
             </div>
             <div class="input-container">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+                <input type="text" name="email" id="email" placeholder=" " class="text-input" autocomplete="off">
+                <label for="email" id="email-label">Email</label>
             </div>
             <div class="input-container">
-                <label for="message">Enter Message</label>
-                <textarea name="message" id="message" cols="30" rows="10">
-
-                </textarea>
+                <textarea placeholder=" " name="message" id="message" cols="30" rows="10" class="text-input"></textarea>
+                <label for="message" id="textarea-label">Enter Message</label>
             </div>
             <div class="submit-container">
-                <input type="submit" value="Send">
+                <input type="submit" value="Send" id="submit">
             </div>
+            <div class="message"></div>
         </form>
     </section>
 
     <footer>
         <!-- <a href="#home" class="icon-home"><i class="fas fa-angle-double-up fa-3x"></i></a> -->
 
-        <div class="footer-icon"><a href="#/" target="_blank"><i
-                    class="fab fa-linkedin fa-2x"></i></a></div>
+        <div class="footer-icon"><a href="#/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></div>
         <div class="footer-icon"><a href="https://github.com/gira1992" target="_blank "><i
                     class="fab fa-github-square fa-2x"></i>
             </a></div>
@@ -151,6 +154,7 @@
 
     <script src="./particles.min.js"></script>
     <script src="./script.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

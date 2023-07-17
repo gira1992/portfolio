@@ -120,11 +120,3 @@ particlesJS('particles-js',
   }
 
 );
-
-const today = new Date
-const thisYear = today.getFullYear()
-const date = today.getDate()
-const month = today.getMonth()
-console.log(date)
-console.log(month)
-console.log(thisYear)
