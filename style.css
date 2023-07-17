@@ -578,7 +578,7 @@ label{
 
 @media only screen and (max-width: 600px){
     #contact {
-        grid-template-rows: 200px 1fr;
+        grid-template-rows: 230px 1fr;
     }
 
     .submit-container{
@@ -587,6 +587,10 @@ label{
 
     form{
         padding-top: 10px;
+    }
+
+    #contact p {
+        padding: 0 15px;
     }
 }
 /* FOOTER SECTION*/
